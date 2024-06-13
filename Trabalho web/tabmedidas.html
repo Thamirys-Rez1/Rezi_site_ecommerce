@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casual Rezi</title>
+  <!-- Estilização do corpo da página disponivel em um arquivo CSS -->
+  <link rel="stylesheet" type="text/css" href="css/rezisite.css">
+</head>
+
+<body>
+  <header>
+    <!-- Imagem logo da loja -->
+    <div class="logo">
+      <div class="header-1">
+        <img src="logo site/rezilogo3.png">
+      </div>
+      <div class="tituloheader" h1>Roupas Casuais</h1>
+      </div>
+  </header>
+  <!-- Menu da loja, com outras páginas linkadas, junto de uma função em JS -->
+  <nav>
+    <a href="./página inicial.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Pagina inicial</a>
+    <a href="./blusas.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Blusas</a>
+    <a href="./calças.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Calças</a>
+    <a href="./casacos.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Casacos e jaquetas</a>
+    <a href="./tabmedidas.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Nossa tabela de
+      medidas</a>
+    <a href="./sobrenos.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Sobre nós</a>
+    <a href="./cadastro.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Cadastre-se</a>
+  </nav>
+  <!-- Parágrafo para avisar sobre as tabelas de medidas -->
+  <h1>Nossas Medidas</h1>
+  <p>Para realizar suas compras sem erros, consulte nossa tabela de medidas e realize sua compra sem receios!</p>
+  <h2>Blusas</h2>
+  <p>A seguir tabela de medidas de blusas e camisas, <br>podendo váriar conforme modelo ou confecção, como cropped ou
+    blusas mais curtas.</p>
+  <!-- Tabela com o tamanho das blusas -->
+  <table>
+    <thead>
+      <tr>
+        <th>Tamanho</th>
+        <th>Altura</th>
+        <th>Busto</th>
+        <th>Cintura</th>
+        <th>Quadril</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>P</td>
+        <td>167/170cm</td>
+        <td>86/90cm</td>
+        <td>68/72cm</td>
+        <td>96/100cm</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>171/173cm</td>
+        <td>91/95cm</td>
+        <td>73/77cm</td>
+        <td>101/105cm</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>173/175cm</td>
+        <td>96/100cm</td>
+        <td>78/82cm</td>
+        <td>106/110cm</td>
+      </tr>
+      <tr>
+        <td>GG</td>
+        <td>175/177cm</td>
+        <td>101/106cm</td>
+        <td>83/87cm</td>
+        <td>111/115cm</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Calças</h2>
+  <p>A seguir tabela de medidas de nossas calças, podendo haver alterações conforme modelo.</p>
+  <!-- Tabela com as medidas das calças-->
+  <table>
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Cintura</th>
+        <th>Comprimento</th>
+        <th>Quadril</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>36</td>
+        <td>36cm</td>
+        <td>110cm</td>
+        <td>45cm</td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>38cm</td>
+        <td>110cm</td>
+        <td>47cm</td>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>40cm</td>
+        <td>112cm</td>
+        <td>49cm</td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>42cm</td>
+        <td>114cm</td>
+        <td>50cm</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Casacos e Jaquetas</h2>
+  <p>Abaixo tabela de medidas de casacos,havendo variações de comprimento total conforme a peça escolhida.</p>
+  <!-- Tabela com a medida dos casacos e jaquetas-->
+  <table>
+    <thead>
+      <tr>
+        <th>Tamanho</th>
+        <th>Cintura</th>
+        <th>Comprimento da manga</th>
+        <th>Comprimento total</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>P</td>
+        <td>86cm</td>
+        <td>62cm</td>
+        <td>73cm</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>90cm</td>
+        <td>63cm</td>
+        <td>75cm</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>96cm</td>
+        <td>65cm</td>
+        <td>78cm</td>
+      </tr>
+      <tr>
+        <td>GG</td>
+        <td>102cm</td>
+        <td>66cm</td>
+        <td>80cm</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Estilização dos elementos da página 'Tabelas de medida'-->
+  <style>
+    h1 {
+      text-align: center;
+      color: black;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      padding-top: 5%;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    p {
+      text-align: center;
+    }
+
+    table {
+      width: 50%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: block;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    .tituloheader {
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: x-large;
+    }
+
+    thead,
+    tbody {
+      display: table;
+      width: 100%;
+
+    }
+  </style>
+  <!-- Eventos JS disponíveis pelo arquivo anexado abaixo -->
+  <script type="text/javascript" src="javascript/javascript.js"> </script>
+  <p>&copy; 2023 Rezi casual</p>
+  <ul>
+    <!-- Ícones das redes sociais juntamente do seu endereço -->
+    <li>
+      <a href="https://www.facebook.com/thamirys.rezi?mibextid=9R9pXO" target="_blank">
+        <img src="Icones img/img fb.png" alt="Rezi Casual">
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/thamirys_rezi?igshid=MXVkcHdsd2ZnMDd3eQ==" target="_blank">
+        <img src="Icones img/img insta.png" alt="Rezi_casual">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.google.com.br/maps/@-29.9792402,-51.1769127,3a,75y,174.04h,88.78t/data=!3m7!1e1!3m5!1s8kaPLqTm_dEDsFFVblphww!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D8kaPLqTm_dEDsFFVblphww%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D210.62431%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu"
+        target="_blank">
+        <img src="Icones img/img local.png" alt="Av. Torquarto Severo, 111 - Anchieta, Porto Alegre - RS, 90200-210">
+      </a>
+    </li>
+  </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Rezi</title>
+    <!-- Estilização do corpo da página disponivel em um arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/rezisite.css">
+</head>
+
+<body>
+    <!-- Imagem logo da loja -->
+    <header>
+        <div class="logo">
+            <div class="header-1">
+                <img src="logo site/rezilogo3.png">
+            </div>
+            <div class="tituloheader" h1>Roupas Casuais</h1>
+            </div>
+    </header>
+    <!-- Menu da loja, com outras páginas linkadas, junto de uma função em JS -->
+    <nav>
+        <a href="./página inicial.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Pagina
+            inicial</a>
+        <a href="./blusas.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Blusas</a>
+        <a href="./calças.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Calças</a>
+        <a href="./casacos.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Casacos e jaquetas</a>
+        <a href="./tabmedidas.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Nossa tabela de
+            medidas</a>
+        <a href="./sobrenos.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Sobre nós</a>
+        <a href="./cadastro.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Cadastre-se</a>
+    </nav>
+    <!-- Grade apenas dos casacos e jaquetas contendo imagem, nome e valor -->
+    <div class="grid-container">
+        <div class="produto">
+            <img src="casacos/casaco cropped preto.jpg" alt="Produto 1">
+            <h3>Casaco cropped</h3>
+            <button>Comprar</button>
+            <p class="preco">R$199.99</p>
+        </div>
+        <div class="produto">
+            <img src="casacos/cassaco longo.jpg" alt="Produto 2">
+            <h3>Casaco longo</h3>
+            <button>Comprar</button>
+            <p class="preco">R$269.99</p>
+        </div>
+        <div class="produto">
+            <img src="casacos/jaqueta couro.jpg" alt="Produto 3">
+            <h3>Jaqueta de couro</h3>
+            <button>Comprar</button>
+            <p class="preco">R$219.99</p>
+        </div>
+        <div class="produto">
+            <img src="casacos/jaqueta jeans.jpg" alt="Produto 4">
+            <h3>Jaqueta Jeans</h3>
+            <button>Comprar</button>
+            <p class="preco">R$129.99</p>
+        </div>
+        <div class="produto">
+            <img src="casacos/jaqueta marinho.jpg" alt="Produto 5">
+            <h3>Jaqueta Marinho</h3>
+            <button>Comprar</button>
+            <p class="preco">R$159.99</p>
+        </div>
+        <div class="produto">
+            <img src="casacos/jaqueta verde.jpg" alt="Produto 6">
+            <h3>Jaqueta em Sarja</h3>
+            <button>Comprar</button>
+            <p class="preco">R$239.99</p>
+        </div>
+    </div>
+    <!-- Estilização da página 'Casacos e jaquetas' -->
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .produto {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+
+        button {
+            border: solid 1px rgb(5, 5, 5);
+            border-radius: 100px;
+            color: white;
+            background-color: #343236;
+            width: 100px;
+            height: 30px;
+
+        }
+
+        .produto img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .produto h3 {
+            margin-bottom: 5px;
+            color: #343236;
+        }
+
+        .produto p {
+            color: #343236;
+        }
+
+        .produto p.preco {
+            font-weight: bold;
+            color: #343236;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 0 10px;
+        }
+    </style>
+    <!-- Eventos JS disponíveis pelo arquivo anexado abaixo -->
+    <script type="text/javascript" src="javascript/javascript.js"> </script>
+
+    <p>&copy; 2023 Rezi casual</p>
+    <ul>
+        <!-- Ícones das redes sociais juntamente do seu endereço -->
+        <li>
+            <a href="https://www.facebook.com/thamirys.rezi?mibextid=9R9pXO" target="_blank">
+                <img src="Icones img/img fb.png" alt="Rezi Casual">
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/thamirys_rezi?igshid=MXVkcHdsd2ZnMDd3eQ==" target="_blank">
+                <img src="Icones img/img insta.png" alt="Rezi_casual">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com.br/maps/@-29.9792402,-51.1769127,3a,75y,174.04h,88.78t/data=!3m7!1e1!3m5!1s8kaPLqTm_dEDsFFVblphww!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D8kaPLqTm_dEDsFFVblphww%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D210.62431%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu"
+                target="_blank">
+                <img src="Icones img/img local.png"
+                    alt="Av. Torquarto Severo, 111 - Anchieta, Porto Alegre - RS, 90200-210">
+            </a>
+        </li>
+    </ul>
+
+</body>
+
+</html>

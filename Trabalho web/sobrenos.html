@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Rezi</title>
+    <!-- Estilização do corpo da página disponivel em um arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/rezisite.css">
+
+</head>
+
+<body>
+    <!-- Imagem logo da loja -->
+    <header>
+        <div class="logo">
+            <div class="header-1">
+                <img src="logo site/rezilogo3.png">
+            </div>
+            <div class="tituloheader" h1>Roupas Casuais</h1>
+            </div>
+    </header>
+    <!-- Menu da loja, com outras páginas linkadas, junto de uma função em JS -->
+    <nav>
+        <a href="./página inicial.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Pagina
+            inicial</a>
+        <a href="./blusas.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Blusas</a>
+        <a href="./calças.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Calças</a>
+        <a href="./casacos.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Casacos e jaquetas</a>
+        <a href="./tabmedidas.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Nossa tabela de
+            medidas</a>
+        <a href="./sobrenos.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Sobre nós</a>
+        <a href="./cadastro.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Cadastre-se</a>
+    </nav>
+    <!-- Parágrafo com a história da loja -->
+    <section>
+        <h2>Bem-vindo a Rezi!</h2>
+        <p>Encontre as últimas tendências em moda casual.</p>
+
+    </section>
+    <h1>Nossa história:</h1>
+    <p>Fundada em 2005, na cidade de Gravataí, a Rezi casual é uma loja de roupas casuais com as maiores <br> tendências
+        da atualidade, juntamente de uma qualidade exepcional dos nossos fornecedores como o <br> nosso maior fornecedor
+        a fábrica Baduchi.</p>
+    <p>Tendo a moda acessível como foco, a Rezi casual oferece, através de um amplo mix de produtos, <br>da confecção
+        feminina exclusivamente, trazendo conforto e elegância as mulheres consumidoras de roupas casuais.</p>
+    <h2> Nosso fornecedor:</h2>
+    <p> Para ter uma qualidade em nosso produtos contamos com nossos fornecedores,<br> a fábrica Baduchi nos proporciona
+        a melhor qualidade para nossa loja.</p>
+    <h3>Veja abaixo um pouco de sua história:</h3>
+    <!-- Vídeo importado do Youtube -->
+    <div class="video-container">
+        <div class="video-iframe">
+            <iframe width="480" height="450" src="https://www.youtube.com/embed/NQsHKXjkCf8"
+                title="Vídeo Institucional Baduchi 2022" frameborder="0"
+                allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Estilização dos elementos da página 'Sobre nós'-->
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        ul {
+            background-color: black;
+            size: 200px;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 60;
+            overflow: hidden;
+            text-align: center;
+            margin: auto;
+            display: block;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 60%;
+            text-align: center;
+
+        }
+
+        .tituloheader {
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+        }
+    </style>
+
+    <!-- Eventos JS disponíveis pelo arquivo anexado abaixo -->
+    <script type="text/javascript" src="javascript/javascript.js"> </script>
+    <p>&copy; 2023 Rezi casual</p>
+    <ul>
+        <!-- Ícones das redes sociais juntamente do seu endereço -->
+        <li>
+            <a href="https://www.facebook.com/thamirys.rezi?mibextid=9R9pXO" target="_blank">
+                <img src="Icones img/img fb.png" alt="Rezi Casual">
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/thamirys_rezi?igshid=MXVkcHdsd2ZnMDd3eQ==" target="_blank">
+                <img src="Icones img/img insta.png" alt="Rezi_casual">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com.br/maps/@-29.9792402,-51.1769127,3a,75y,174.04h,88.78t/data=!3m7!1e1!3m5!1s8kaPLqTm_dEDsFFVblphww!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D8kaPLqTm_dEDsFFVblphww%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D210.62431%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu"
+                target="_blank">
+                <img src="Icones img/img local.png"
+                    alt="Av. Torquarto Severo, 111 - Anchieta, Porto Alegre - RS, 90200-210">
+            </a>
+        </li>
+    </ul>
+
+
+
+
+</body>
+
+</html>
